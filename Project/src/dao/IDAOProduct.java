@@ -6,7 +6,9 @@ import model.Product;
 
 public interface IDAOProduct {
 	// lay du lieu tu database len
-	public ArrayList<Product> getListProduct();
+	public ArrayList<Product> getListProduct(String sql);
+
 	//
+
 
 }

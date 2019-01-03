@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Group 14 - Admin</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+      <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a  href="index.html"><h3 style="margin-left: 20px ">QLTAStore</h3></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Admin</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i>Hồ sơ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Tin nhắn</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Cài đặt</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i>Đăng xuất</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul></nav>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-edit"></i> Quản lý sản phẩm <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse in">
+                            <li>
+                                <a href="phone.html"><i class="fa fa-fw fa-mobile"></i>Samsung</a>
+                            </li>
+                             <li>
+                                <a href="phone.html"><i class="fa fa-fw fa-mobile"></i>Iphone</a>
+                            </li>
+                             <li>
+                                <a href="phone.html"><i class="fa fa-fw fa-mobile"></i>Xiaomi</a>
+                            </li>
+                             <li>
+                                <a href="phone.html"><i class="fa fa-fw fa-mobile"></i>Oppo</a>
+                            </li>
+                        </ul>
+                    </li>
+                      <li>
+                        <a href="cart.html"><i class="fa fa-fw fa-shopping-cart"></i> Quản lý đơn hàng</a>
+                    </li>
+                    
+                   
+                    <li class="active">
+                        <a href="account.html"><i class="fa fa-fw fa-user"></i> Quản lý tài khoản</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        
+
+        <div id="page-wrapper" style="height:  100%">
+
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                   
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                         <div >
+                             <h1 class="page-header">
+                            Quản lý điện thoại
+                        </h1>
+                         <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>  <a href="index.html" style="color: #777;">Trang chủ</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-fw fa-mobile"></i> Quản lý điện thoại
+                            </li>
+                        </ol>
+                       
+                       
+                    </div>
+                       <table id="datatable-buttons" class="table table-striped table-bordered">
+                       <nav class="navbar navbar-light text-right">
+                        
+                        <button class="btn btn-primary"
+                            submit" title="Thêm sách mới vào tủ sách" data-toggle="modal"
+                            data-target="#addsp">
+                            <i class="fa fa-plus"></i> Thêm
+                        </button>
+                    </nav>
+                      <thead>
+
+                        <tr>
+                          <th>STT</th>
+                          <th>Mã điện thoại</th>
+                          <th>Tên điện thoại</th>
+                          <th>Giá</th>
+                           <th>Hình ảnh</th>
+                          <th>Hãng sản xuất</th>
+                          <th>Thao tác</th>
+                        </tr>
+                      </thead>
+
+
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>anjav</td>
+                          <td>Lê Thành An</td>
+                          <td>5000000</td>
+                          <td>141998</td>
+                          <td>0868912127</td>
+                          <td><button class="btn btn-success" type="submit" title="Sửa"
+                                        data-toggle="modal" data-target="#editsp">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger" type="submit" title="Xóa"
+                                        data-toggle="modal" data-target="#delsp">
+                                        <i class="fa fa-trash"></i>
+                                    </button></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>bellot</td>
+                          <td>Nguyễn Văn Quang</td>
+                          <td>8000000</td>
+                          <td>quang123</td>
+                          <td>0000000</td>
+                          <td><button class="btn btn-success" type="submit" title="Sửa"
+                                        data-toggle="modal" data-target="#editsp">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger" type="submit" title="Xóa"
+                                        data-toggle="modal" data-target="#delsp">
+                                        <i class="fa fa-trash"></i>
+                                    </button></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>luuda</td>
+                          <td>Đào Hoài Lưu</td>
+                          <td>6000000</td>
+                          <td>afcg</td>
+                          <td>232556</td>
+                          <td><button class="btn btn-success" type="submit" title="Sửa"
+                                        data-toggle="modal" data-target="#editsp">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-danger" type="submit" title="Xóa"
+                                        data-toggle="modal" data-target="#delsp">
+                                        <i class="fa fa-trash"></i>
+                                    </button></td>
+                        </tr>
+                       
+                       
+                     
+                      </tbody>
+                    </table>
+                    
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+        <!-- Start Add -->
+    <div class="modal" id="addsp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                   
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                     <span><h3 class="modal-title text-center">Thêm Đơn Hàng</h3></span>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="masp" title="STT">STT:</label> <input
+                            type="text" class="form-control" placeholder="" id="masp1">
+                    </div>
+                    <div class="form-group">
+                        <label for="tensp" title="Mã đơn hàng">Mã đơn hàng:</label> <input
+                            type="text" class="form-control" placeholder="" id="tensp1">
+                    </div>
+                    <div class="form-group">
+                        <label for="mahang" title="Tên sản phẩm">Tên sản phẩm:</label> <input type="text" class="form-control" placeholder=""
+                            id="mahang1">
+                    <div class="form-group">
+                        <label for="mahang" title="Giá">Giá:</label> <input type="text" class="form-control" placeholder=""
+                            id="mahang1">
+                    </div>
+                    <div class="form-group">
+                        <label for="mahang" title="Số lượng">Số lượng:</label> <input type="text" class="form-control" placeholder=""
+                            id="mahang1">
+                    </div>
+                    <div class="form-group">
+                        <label for="gioitinh" title="Số điện thoại">Số điện thoại:</label> <input
+                            type="number" class="form-control" placeholder="" id="mahang1">
+                    </div>
+                    <div class="form-group">
+                        <label for="dongia" title="Email">Email:</label> <input
+                            type="text" class="form-control" placeholder="" id="dongia1">
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                        onclick="Add()">Thêm</button>
+                    <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Trở về</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Add -->
+    <!-- Start Delete -->
+    <div class="modal" id="delsp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Cảnh Báo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="canhbao" title="Cảnh Báo">Bạn có chắc chắn xoá
+                            không?</label>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Có</button>
+                    <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Không</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Delete -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+
+</body>
+
+</html>

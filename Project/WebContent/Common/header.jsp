@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>HTDStore - Điện thoại, laptop, phụ kiện chính hãng</title>
-<link rel="shortcut icon" type="image/png" href="image/logo/ligo.png" />
+<link rel="shortcut icon" type="image/png" href="img/logo/ligo.png" />
 
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
@@ -40,95 +40,26 @@
 				</form>
 			</div>
 			<!--End div search-->
-			<%
-				String username = null;
-				Cookie[] cookies = request.getCookies();
-				if (cookies != null) {
-					for (Cookie cookie : cookies) {
-						if (cookie.getName().equals("username"))
-							username = cookie.getValue();
-					}
-				}
-				if (username != null) {
-			%>
-
 
 			<div class="f-menu">
 				<ul>
-					<%-- <%
-						if (session.getAttribute("username") != null) {
-					%>
-					<li><a style="color: blue;">Chào : <%=session.getAttribute("username")%></a>
-						<p>
-							<a href="ServlerLogin?command=dangxuat">Đăng xuất</a>
-						</p></li>
-					<%
-						}
-					%>
-					 --%>
-
-
-
-					<li><a href="logout.jsp"><span>Đăng xuất</span></a></li>
-
-					<li><a href="update_user.jsp?username=<%=username%>"></a><span><%=username%></span></li>
-					<!-- <span><a href="ServletLogout">dang xuat</a></span> 
-					<li><a href="LogoutServlet"><span>Logout</span></a></li> -->
-
-
-
-					<!-- <li><a href="#" title="Điện thoại trợ giá"> <i class="icon-dttrogia"></i>
-							<img src="image/icon/icon_trogia.gif" alt="Not found resource" srcset="" />
-							<i class="fas fa-mobile-alt fa-stack-3x"></i> <span> Điện
-								thoại trợ giá</span>
-					</a></li> -->
-
-					<li><a href="KhuyenMai.jsp" title="Khuyến mãi"> <!-- <i class="icon-dttrogia"></i>-->
-							<i class="fas fa-gift"></i> <span> Khuyến mãi</span>
-					</a></li>
-					<li><a href="HoiDap.jsp" title="Hỏi đáp"> <!-- <i class="icon-dttrogia"></i>-->
-							<i class="far fa-question-circle"></i> <span> Hỏi đáp</span>
-					</a></li>
-					<li><a href="order.jsp" title="Giỏ hàng của bạn"> <!-- <i class="icon-dttrogia"></i>-->
-							<i class="fas fa-shopping-cart "></i> <!--<img src="image/icon/icon_trogia.gif" alt="Not found resource" srcset="" /> -->
-							<span> Giỏ hàng</span>
-					</a></li>
-				</ul>
-				<!---------------END F-MENU----------------->
-			</div>
-			<%
-				} else {
-			%>
-			<div class="f-menu">
-				<ul>
-					<!-- <li><a href="#" title="Điện thoại trợ giá"> <i class="icon-dttrogia"></i>
-							<img src="image/icon/icon_trogia.gif" alt="Not found resource" srcset="" />
-							<i class="fas fa-mobile-alt fa-stack-3x"></i> <span> Điện
-								thoại trợ giá</span>
-					</a></li> -->
-
-					<li><a href="KhuyenMai.jsp" title="Khuyến mãi"> <!-- <i class="icon-dttrogia"></i>-->
-							<i class="fas fa-gift"></i> <span> Khuyến mãi</span>
-					</a></li>
 					<li><a href="#" title="Hỏi đáp"> <!-- <i class="icon-dttrogia"></i>-->
 							<i class="far fa-question-circle"></i> <span> Hỏi đáp</span>
 					</a></li>
-					<li><a href="order.jsp" title="Giỏ hàng của bạn"> <!-- <i class="icon-dttrogia"></i>-->
+					<li><a href="../order.jsp" title="Giỏ hàng của bạn"> <!-- <i class="icon-dttrogia"></i>-->
 							<i class="fas fa-shopping-cart "></i> <!--<img src="image/icon/icon_trogia.gif" alt="Not found resource" srcset="" /> -->
 							<span> Giỏ hàng</span>
 					</a></li>
-					<li><a href="login.jsp" title="Dang nhap"> <i
+					<li><a href="../login.jsp" title="Dang nhap"> <i
 							class="fas fa-mobile-alt fa-stack-3x"></i> <span>Đăng nhập</span>
 					</a></li>
-					<li><a href="register.jsp" title="Dang ky"> <i
+					<li><a href="../register.jsp" title="Dang ky"> <i
 							class="fas fa-mobile-alt fa-stack-3x"></i> <span>Đăng ký</span>
 					</a></li>
 				</ul>
 				<!---------------END F-MENU----------------->
 			</div>
-			<%
-				}
-			%>
+		
 			<!-------------END-F-HEADER------------->
 		</div>
 
@@ -136,224 +67,20 @@
 
 		<nav>
 		<div class="m-container">
-			<ul class="menu-main">
+			<ul class="menu-main" style="left: -77px;">
 				<li><a href="index.jsp" title="Trang chủ"> <i
-						class="fas fa-home"></i><span>Trang chủ</span>
-				</a>
-					<li><a href="category.jsp" title="Điện thoại"> <i
-							class="fas fa-mobile"></i><span>Điện thoại</span>
-					</a>
-						<div class="menu-sub">
-							<div class="menu-col-1a">
-								<h3 class="menu-category">Hãng sản xuất</h3>
-								<ul>
-									<li><a href="">Apple</a></li>
-									<li><a href="">Samsung</a></li>
-									<li><a href="">Oppo</a></li>
-									<li><a href="">Xiaomi</a></li>
-									
-								</ul>
-							</div>
-							<div class="menu-col-1">
-								<h3 class="menu-category">Mức giá</h3>
-								<ul>
-									<li><a href="">Dưới 1 triệu</a></li>
-									<li><a href="">Từ 1 - 3 triệu</a></li>
-									<li><a href="">Từ 3 - 6 triệu</a></li>
-									<li><a href="">Từ 6 - 10 triệu</a></li>
-									<li><a href="">Từ 10 - 15 triệu</a></li>
-									<li><a href="">Trên 15 triệu</a></li>
-								</ul>
-							</div>
-							<div class="menu-col-1">
-								<h3 class="menu-category">Điện thoại bán chạy nhất</h3>
-								<ul class="menu-bxh">
-									<li class="clearfix"><a href="" class="menu-col-img"><img
-											src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-											alt="" /></a>
-										<div class="bxh-price">
-											<a href="#"><span>Oppo F9</span></a>
-											<p>7.699.000đ</p>
-										</div></li>
-									<div class="m-clean"></div>
-									<li class=" clearfix"><a href="" class="menu-col-img"><img
-											src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-											alt="" /></a>
-										<div class="bxh-price22">
-											<a href="#"><span>Oppo Neo9</span></a>
-											<p>7.699.000đ</p>
-										</div></li>
-								</ul>
-								s
-							</div>
-							<div class="menu-col-1">
-								<img src="image/636741614288912853_Banner 248x248.jpg" alt=""
-									style="width: 100%; height: 210px" />
-							</div>
-						</div></li>
-				<li><a href="" title="Tablet"> <i class="fas fa-tablet"></i>
-						<span>Tablet</span>
-				</a>
-					<div class="menu-sub">
-						<div class="menu-col-1a">
-							<h3 class="menu-category">Hãng sản xuất</h3>
-							<ul>
-								<li><a href="">Apple (Ipad)</a></li>
-								<li><a href="">Samsung</a></li>
-								<li><a href="">lelnovo</a></li>
-								<li><a href="">Huawei</a></li>
-								<li><a href="">Masstel</a></li>
-								<li><a href="">Itel</a></li>
-							</ul>
-						</div>
-						<div class="menu-col-1">
-							<h3 class="menu-category">Mức giá</h3>
-							<ul>
-								<li><a href="">Dưới 1 triệu</a></li>
-								<li><a href="">Từ 1 - 3 triệu</a></li>
-								<li><a href="">Từ 3 - 6 triệu</a></li>
-								<li><a href="">Trên 15 triệu</a></li>
-							</ul>
-						</div>
-						<div class="menu-col-1">
-							<h3 class="menu-category">Điện thoại bán chạy nhất</h3>
-							<ul class="menu-bxh">
-								<li class="clearfix"><a href="" class="menu-col-img"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price">
-										<a href="#"><span>Oppo F9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-								<div class="m-clean"></div>
-								<li class=" clearfix"><a href="" class="menu-col-img"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price22">
-										<a href="#"><span>Oppo Neo9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-							</ul>
-							s
-						</div>
-						<div class="menu-col-1">
-							<img
-								src="image/636722577484242035_636669934945963395_H4.png.jpeg"
-								alt="" style="width: 100%; height: 210px" />
-						</div>
-					</div></li>
-
-				<li><a href="" title="Laptop"> <i class="fas fa-laptop"></i><span>Laptop</span>
-				</a>
-					<div class="menu-sub">
-						<div class="menu-col-1a">
-							<h3 class="menu-category">Hãng sản xuất</h3>
-							<ul>
-								<li><a href="">Apple (Macbook)</a></li>
-								<li><a href="">Asus</a></li>
-								<li><a href="">Acer</a></li>
-								<li><a href="">Dell</a></li>
-								<li><a href="">HP</a></li>
-								<li><a href="">Lenovo</a></li>
-								<li><a href="">MSI</a></li>
-								<li><a href="">Masstel</a></li>
-								<li><a href="">Haler</a></li>
-							</ul>
-						</div>
-						<div class="menu-col-1">
-							<h3 class="menu-category">Mức giá</h3>
-							<ul>
-								<li><a href="" title="Dưới 5 triệu">Dưới 5 triệu</a></li>
-								<li><a href="" title="Từ 5 - 10 triệu">Từ 5 - 10 triệu</a></li>
-								<li><a href="" title="Từ 10 - 15 triệu">Từ 10 - 15
-										triệu</a></li>
-								<li><a href="" title="Từ 15 - 20 triệu">Từ 15 - 20
-										triệu</a></li>
-								<li><a href="" title="Từ 20 - 25 triệu">Từ 20 - 25
-										triệu</a></li>
-								<li><a href="" title="Từ 25 - 30 triệu">Từ 25 - 30
-										triệu</a></li>
-								<li><a href="" title="Trên 30 triệu">Trên 30 triệu</a></li>
-							</ul>
-						</div>
-						<div class="menu-col-1">
-							<h3 class="menu-category">Điện thoại bán chạy nhất</h3>
-							<ul class="menu-bxh">
-								<li class="clearfix"><a href="" class="menu-col-img"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price">
-										<a href="#"><span>Oppo F9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-								<div class="m-clean"></div>
-								<li class=" clearfix"><a href="" class="menu-col-img"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price22">
-										<a href="#"><span>Oppo Neo9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-							</ul>
-							s
-						</div>
-						<div class="menu-col-1">
-							<img src="image/636659578548694071_H4-Section 1.png" alt=""
-								style="width: 100%; height: 210px" />
-						</div>
-					</div></li>
-				<li><a href="" title="Phụ kiện"> <i
-						class="fas fa-headphones-alt"></i><span>Phụ kiện</span>
-				</a>
-					<div class="menu-sub">
-						<div class="menu-col-2a">
-							<h3 class="menu-category">Các sản phẩm phụ kiện</h3>
-							<ul>
-								<li><a href="" title="Bao da ốp lưng">Bao da ốp lưng</a></li>
-								<li><a href="" title="Sạc dự phòng">Sạc dự phòng</a></li>
-								<li><a href="" title="Thẻ nhớ">Thẻ nhớ</a></li>
-								<li><a href="" title="Phụ kiện Apple">Phụ kiện Apple</a></li>
-								<li><a href="" title="Miếng dán màn hình">Miếng dán màn
-										hình</a></li>
-								<li><a href="" title="Tai nghe">Tai nghe</a></li>
-								<li><a href="" title="Loa">Loa</a></li>
-								<li><a href="" title="USB - Ổ cứng">USB - Ổ cứng</a></li>
-								<li><a href="" title="Sạc cáp">Sạc cáp</a></li>
-								<li><a href="" title="Chuột">Chuột</a></li>
-								<li><a href="" title="Balo - Túi xách">Balo - Túi xách</a></li>
-								<li><a href="" title="TV BOX">TV BOX</a></li>
-								<li><a href="" title="Phụ kiện khác">Phụ kiện khác</a></li>
-								<li><a href="" title="Máy chơi game">Máy chơi game</a></li>
-							</ul>
-						</div>
-						<div class="menu-col-2">
-							<h3 class="menu-category">Điện thoại bán chạy nhất</h3>
-							<ul class="menu-bxh">
-								<li class="clearfix"><a href="" class="menu-col-img"
-									title="Oppo F9"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price">
-										<a href="#"><span>Oppo F9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-								<div class="m-clean"></div>
-								<li class=" clearfix"><a href="" class="menu-col-img"><img
-										src="https://ss7.vzw.com/is/image/VerizonWireless/iPhoneX-Svr?$device-lg$"
-										alt="" /></a>
-									<div class="bxh-price22">
-										<a href="#" title="Oppo Neo9"><span>Oppo Neo9</span></a>
-										<p>7.699.000đ</p>
-									</div></li>
-							</ul>
-						</div>
-						<div class="menu-col-2">
-							<img src="image/636713668479090000_KM-Phu-Kien-248x248.png"
-								alt="" style="width: 100%; height: 210px" />
-						</div>
-					</div></li>
-				<li><a href="" title="Máy đổi trả"> <i class="fas fa-gift"></i><span>Máy
-							đổi trả</span>
+						class="fas fa-home"></i><span>HOME</span>
+				</a></li>
+				<li><a href="DienThoai/samsung.jsp" title="Samsung"> <i
+						class="fas fa-mobile"></i><span>SAMSUNG</span>
+				</a></li>
+				<li><a href="DienThoai/Iphone.jsp" title="IPHONE"> <i class="fas fa-mobile"></i>
+						<span>IPHONE</span>
+				</a></li>
+				<li><a href="DienThoai/xiaomi.jsp" title="Xiaomi"> <i class="fas fa-mobile"></i><span>XIAOMI</span>
+				</a></li>
+				<li><a href="DienThoai/oppo.jsp" title="Máy đổi trả"> <i
+						class="fas fa-mobile"></i><span>OPPO</span>
 				</a></li>
 			</ul>
 		</div>

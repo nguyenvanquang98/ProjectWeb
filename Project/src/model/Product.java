@@ -64,4 +64,11 @@ public class Product {
 	public void setGiamGia(int giamGia) {
 		this.giamGia = giamGia;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", img=" + img + ", price=" + price + ", giamGia=" + giamGia
+				+ "]";
+	}
+	
 }

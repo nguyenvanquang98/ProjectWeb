@@ -9,11 +9,11 @@ import com.sun.webkit.ContextMenu.ShowContext;
 
 import model.Product;
 
-public class DAOProduct implements IDAOProduct{
-	public  ArrayList<Product> listProduct;
+public class DAOProduct implements IDAOProduct {
+	public ArrayList<Product> listProduct;
 
 	@Override
-	public  ArrayList<Product> getListProduct() {
+	public ArrayList<Product> getListProduct(String sql) {
 		if (listProduct == null) {
 			listProduct = new ArrayList<Product>();
 		}
@@ -21,7 +21,7 @@ public class DAOProduct implements IDAOProduct{
 			try {
 				Connection conn = KetNoiDataBase.getConnection();
 				Statement stm = conn.createStatement();
-				String sql = "select * from productindex";
+//				String sql = "select * from productindex";
 				ResultSet rs = stm.executeQuery(sql);
 				while (rs.next()) {
 					int id = rs.getInt("id");
